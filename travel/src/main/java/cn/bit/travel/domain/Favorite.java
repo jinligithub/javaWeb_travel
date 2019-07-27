@@ -2,9 +2,9 @@ package cn.bit.travel.domain;
 
 import java.io.Serializable;
 
-/**
- * 收藏实体类
- */
+    /**
+    * 收藏实体类
+     */
 public class Favorite implements Serializable {
     private Route route;//旅游线路对象
     private String date;//收藏时间

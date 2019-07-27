@@ -10,6 +10,8 @@ public class FavoriteServiceImpl implements  FavoriteService {
 
     private FavoriteDao favoriteDao = new FavoriteDaoImpl();
 
+
+    //判断用户是否添加添加收藏
     @Override
     public boolean isFavorite(String rid, int uid) {
 
@@ -18,6 +20,7 @@ public class FavoriteServiceImpl implements  FavoriteService {
         return favorite != null;//如果对象有值，则为true，反之，则为false
     }
 
+    //添加收藏
     @Override
     public void add(String rid, int uid) {
         favoriteDao.add(Integer.parseInt(rid),uid);

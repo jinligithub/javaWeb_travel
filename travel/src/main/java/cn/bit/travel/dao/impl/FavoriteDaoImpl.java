@@ -14,6 +14,7 @@ public class FavoriteDaoImpl implements FavoriteDao {
 
     private JdbcTemplate template = new JdbcTemplate(JDBCUtils.getDataSource());
 
+    //根据rid和uid查询收藏信息
     @Override
     public Favorite findByRidAndUid(int rid, int uid) {
         Favorite favorite = null;
@@ -26,6 +27,7 @@ public class FavoriteDaoImpl implements FavoriteDao {
         return favorite;
     }
 
+    //根据rid 查询收藏次数
     @Override
     public int findCountByRid(int rid) {
         String sql = "SELECT COUNT(*) FROM tab_favorite WHERE rid = ?";
@@ -33,6 +35,7 @@ public class FavoriteDaoImpl implements FavoriteDao {
         return template.queryForObject(sql,Integer.class,rid);
     }
 
+    //添加收藏
     @Override
     public void add(int rid, int uid) {
         String sql = "insert into tab_favorite values(?,?,?)";

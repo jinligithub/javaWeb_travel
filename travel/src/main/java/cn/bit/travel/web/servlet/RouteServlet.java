@@ -83,6 +83,7 @@ public class RouteServlet extends BaseServlet {
         writeValue(route,response);
     }
 
+
     /**
      * 判断当前登录用户是否收藏过该线路
      * @param request
@@ -111,6 +112,7 @@ public class RouteServlet extends BaseServlet {
         //4. 写回客户端
         writeValue(flag,response);
     }
+
 
     /**
      * 添加收藏

@@ -1,7 +1,6 @@
 package cn.bit.travel.dao;
 
 import cn.bit.travel.domain.User;
-import cn.itcast.travel.domain.User;
 
 public interface UserDao {
 
