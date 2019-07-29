@@ -11,7 +11,6 @@ import java.util.List;
 public class CategoryDaoImpl implements CategoryDao {
 
     private JdbcTemplate template = new JdbcTemplate(JDBCUtils.getDataSource());
-
     //查询所有的种类
     @Override
     public List<Category> findAll() {

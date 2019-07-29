@@ -153,8 +153,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="986" />
-    <option name="width" value="919" />
+    <option name="x" value="985" />
+    <option name="width" value="920" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
@@ -314,12 +314,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564236136825</updated>
-      <workItem from="1564236138313" duration="1156000" />
+      <workItem from="1564236138313" duration="1751000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1156000" />
+    <option name="totallyTimeSpent" value="1751000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />

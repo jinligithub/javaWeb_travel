@@ -25,7 +25,8 @@ public class CategoryServiceImpl implements CategoryService {
         //1.2可使用sortedset排序查询
         //Set<String> categorys = jedis.zrange("category", 0, -1);
         //1.3查询sortedset中的分数(cid)和值(cname)
-        Set<Tuple> categorys = jedis.zrangeWithScores("category", 0, -1);
+        Set<Tuple> categorys = jedis.zrangeWithScores("category", 0, -1);//查询所有
+
 
         List<Category> cs = null;
         //2.判断查询的集合是否为空
@@ -37,7 +38,6 @@ public class CategoryServiceImpl implements CategoryService {
             cs = categoryDao.findAll();
             //3.2 将集合数据存储到redis中的 category的key
             for (int i = 0; i < cs.size(); i++) {
-
                 jedis.zadd("category", cs.get(i).getCid(), cs.get(i).getCname());
             }
         } else {
@@ -53,8 +53,6 @@ public class CategoryServiceImpl implements CategoryService {
 
             }
         }
-
-
         return cs;
     }
 }

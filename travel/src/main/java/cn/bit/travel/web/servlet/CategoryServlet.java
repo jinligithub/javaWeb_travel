@@ -14,7 +14,6 @@ import java.util.List;
 public class CategoryServlet extends BaseServlet {
 
     private CategoryService service = new CategoryServiceImpl();
-
     /**
      * 查询所有
      * @param request

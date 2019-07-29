@@ -20,14 +20,10 @@
                 var li = '<li><a href="route_list.html?cid='+data[i].cid+'">'+data[i].cname+'</a></li>';
 
                 lis += li;
-                
             }
-            
-
             //拼接收藏排行榜的li,<li><a href="favoriterank.html">收藏排行榜</a></li>
             
             lis+= '<li><a href="favoriterank.html">收藏排行榜</a></li>';
-
             //将lis字符串，设置到ul的html内容中
             $("#category").html(lis);
         });
