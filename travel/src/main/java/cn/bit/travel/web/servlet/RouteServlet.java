@@ -113,7 +113,6 @@ public class RouteServlet extends BaseServlet {
         writeValue(flag,response);
     }
 
-
     /**
      * 添加收藏
      * @param request

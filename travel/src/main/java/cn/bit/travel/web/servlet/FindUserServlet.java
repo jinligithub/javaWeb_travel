@@ -11,6 +11,7 @@ import java.io.IOException;
 
 @WebServlet("/findUserServlet")
 public class FindUserServlet extends HttpServlet {
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //从session中获取登录用户
         Object user = request.getSession().getAttribute("user");

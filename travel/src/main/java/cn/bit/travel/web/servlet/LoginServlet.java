@@ -19,6 +19,7 @@ import java.util.Map;
 
 @WebServlet("/loginServlet")
 public class LoginServlet extends HttpServlet {
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //1.获取用户名和密码数据
         Map<String, String[]> map = request.getParameterMap();

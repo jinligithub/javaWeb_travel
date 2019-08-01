@@ -6,20 +6,14 @@ import cn.bit.travel.dao.RouteImgDao;
 import cn.bit.travel.dao.SellerDao;
 import cn.bit.travel.dao.impl.FavoriteDaoImpl;
 import cn.bit.travel.dao.impl.RouteDaoImpl;
+import cn.bit.travel.dao.impl.RouteImgDaoImpl;
+import cn.bit.travel.dao.impl.SellerDaoImpl;
+import cn.bit.travel.domain.PageBean;
+import cn.bit.travel.domain.Route;
+import cn.bit.travel.domain.RouteImg;
+import cn.bit.travel.domain.Seller;
 import cn.bit.travel.service.RouteService;
-import cn.itcast.travel.dao.FavoriteDao;
-import cn.itcast.travel.dao.RouteDao;
-import cn.itcast.travel.dao.RouteImgDao;
-import cn.itcast.travel.dao.SellerDao;
-import cn.itcast.travel.dao.impl.FavoriteDaoImpl;
-import cn.itcast.travel.dao.impl.RouteDaoImpl;
-import cn.itcast.travel.dao.impl.RouteImgDaoImpl;
-import cn.itcast.travel.dao.impl.SellerDaoImpl;
-import cn.itcast.travel.domain.PageBean;
-import cn.itcast.travel.domain.Route;
-import cn.itcast.travel.domain.RouteImg;
-import cn.itcast.travel.domain.Seller;
-import cn.itcast.travel.service.RouteService;
+
 
 import java.util.List;
 
@@ -33,7 +27,7 @@ public class RouteServiceImpl implements RouteService {
     private FavoriteDao favoriteDao = new FavoriteDaoImpl();
 
     @Override
-    public PageBean<Route> pageQuery(int cid, int currentPage, int pageSize,String rname ) {
+    public PageBean<Route> pageQuery(int cid, int currentPage, int pageSize, String rname ) {
         //封装PageBean
         PageBean<Route> pb = new PageBean<Route>();
         //设置当前页码

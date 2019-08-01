@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet("/category/*")
+
 public class CategoryServlet extends BaseServlet {
 
     private CategoryService service = new CategoryServiceImpl();

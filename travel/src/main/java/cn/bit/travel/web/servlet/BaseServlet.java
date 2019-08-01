@@ -11,10 +11,9 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+//抽取Servlet
 
 public class BaseServlet extends HttpServlet {
-
-
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //System.out.println("baseServlet的service方法被执行了...");
